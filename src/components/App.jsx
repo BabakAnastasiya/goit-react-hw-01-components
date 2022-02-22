@@ -20,7 +20,7 @@ export const App = () => {
         likes={profile.stats.likes} />
 
         <div>
-          <Statistic title="Upload stats" stats={data} />;
+          <Statistic title="Upload stats" stats={data} />
           </div>
 
         <div>

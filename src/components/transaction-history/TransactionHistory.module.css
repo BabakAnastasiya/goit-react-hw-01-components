@@ -1,0 +1,22 @@
+.transactionHistory {
+  width: 400px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid rgb(97, 27, 129);
+  margin-left: 50px;
+}
+
+.title {
+  color: brown;
+}
+
+.item {
+  width: 100px;
+}
+.transactionHistory td {
+  text-transform: capitalize;
+}
+
+.transactionHistory tr {
+  height: 30px;
+}

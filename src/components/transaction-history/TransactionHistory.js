@@ -1,19 +1,20 @@
 import PropTypes from 'prop-types';
+import s from './TransactionHistory.module.css'
 
 function TransactionHistory({items}){
-    return (<table className="transaction-history">
+    return (<table className={s.transactionHistory}>
     <thead>
       <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
+        <th className={s.title}>Type</th>
+        <th className={s.title}>Amount</th>
+        <th className={s.title}>Currency</th>
       </tr>
     </thead>
   
     <tbody>
         {items.map(item=>{
             return(
-          <tr key={item.id}>
+          <tr className={s.item} key={item.id}>
           <td>{item.type}</td>
           <td>{item.amount}</td>
           <td>{item.currency}</td>
